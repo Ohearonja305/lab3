@@ -1,0 +1,18 @@
+name: Lab3 Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run one line of script
+        run: echo Hello Prof!
+
+      - name: Run a multiple lined script
+        run:
+          echo This is my GitHub Action test
+          echo Based on what I remember from the midterm
